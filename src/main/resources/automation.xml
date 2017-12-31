@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+  ~  Copyright (c) 2005-2014, WSO2 Inc. (http://wso2.com) All Rights Reserved.
+  ~
+  ~  WSO2 Inc. licenses this file to you under the Apache License,
+  ~  Version 2.0 (the "License"); you may not use this file except
+  ~  in compliance with the License.
+  ~  You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~  Unless required by applicable law or agreed to in writing,
+  ~  software distributed under the License is distributed on an
+  ~  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~  KIND, either express or implied.  See the License for the
+  ~  specific language governing permissions and limitations
+  ~  under the License.
+
+-->
+<automation xmlns="automationSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="automationSchema.xsd">
+
+    <role key="role1">
+        <roleName>engineer</roleName>
+        <isSharedRole>false</isSharedRole>
+
+        <user key="user1">testuser1</user>
+        <user key="user2">testuser2</user>
+
+        <permission key="permission1">/permission/admin/login</permission>
+        <permission key="permission2">/permission/admin/configure/security/usermgt/provisioning</permission>
+    </role>
+
+    <role key="role2">
+        <roleName>teacher</roleName>
+        <isSharedRole>false</isSharedRole>
+
+        <user key="user1">testuser3</user>
+
+        <permission key="permission1">/permission/admin/login</permission>
+        <permission key="permission2">/permission/admin/configure/entitlement/policy/manage</permission>
+    </role>
+
+</automation>
