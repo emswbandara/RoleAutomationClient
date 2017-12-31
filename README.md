@@ -1,13 +1,13 @@
 # RoleAutomationClient
 Java client to automate role creation in WSO2 Identity Server
 
-Building the project
+**Building the project**
 
 Maven version: 3.5.0
 
 Command
 
-mvn clean install
+    mvn clean install
 
 This will create an executable jar - RoleAutomationClient-1.0.0.jar inside target directory. Required configuration files will be copied to target/conf directory. Required dependencies will be copied to target/lib directory.
 
@@ -26,8 +26,7 @@ For SSL based communications with the server
     Replace the client-truststore.jks file found in conf/ directory with the client-truststore.jks file located in <IS_SERVER>/repository/resources/security path.
     change trust.store.password to the password of client-truststore.jks
 
-Add user credentials to authenticate service stubs
-Add user credentials of a user with required permissions to perform user management operations(default would be admin user)
+Add user credentials to authenticate service stubs. This user should have the required permissions to perform user management operations.
 
     Replace the values of user.name and user.password with the credentials of the user.
 
@@ -48,7 +47,8 @@ Configure the role names and the required permissions in conf/automation.xml fil
 
 Please note that here user tags should contain already existing user names in the system.
 You can add up to any number of user tags and permission tags. Refer permissions.txt to find the list of permissions you can assign to a role in the required format.
-How to execute?
+
+**How to execute?**
 
 After making the required configurations mentioned above use the following command to execute the client.
 
@@ -56,5 +56,5 @@ Java version: 1.7 or above
 
 Command
 
-java -jar RoleAutomationClient-1.0.0.jar 
+    java -jar RoleAutomationClient-1.0.0.jar 
 
